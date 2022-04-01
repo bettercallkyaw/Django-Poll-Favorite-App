@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %} poll home {% endblock  %}
+
+{% block content %}
+  <div class="card text-center">
+      <div class="card-body">
+          <h1>Welcom To The Poll Favorite App</h1>
+          <p>This is an example django app</p>
+          <a href="{% url 'polls:index' %}" class="btn btn-dark">
+              view available polls
+          </a>
+      </div>
+  </div>
+{% endblock  %}
